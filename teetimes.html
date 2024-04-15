@@ -5,7 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+        <link rel="stylesheet" href="styles.css"> 
+        <style>
+            /* Custom CSS styles */
+            .course-heading {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .tee-time {
+                margin-bottom: 20px;
+            }
+        </style>
+        <!-- Your custom styles -->
     </head>
     <body>
         <header class="bg-dark text-white">
@@ -47,7 +58,66 @@
         </header>
     
         <!-- Your HTML content goes here -->
-    
+        <div class="container">
+    <h1 class="text-center">Golf Pairings & Team Times</h1>
+
+    <!-- Course 1 -->
+    <div class="course-heading">
+        <h2>Sydney Marowitz</h2>
+    </div>
+
+    <div class="row">
+        <!-- Tee Time 1 -->
+        <div class="col-md-4 tee-time">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tee Time: TBD</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Jason</li>
+                        <li class="list-group-item">Garet</li>
+                        <li class="list-group-item">Eric</li>
+                        <li class="list-group-item">Josh</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tee Time 2 -->
+        <div class="col-md-4 tee-time">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tee Time: TBD</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Travis</li>
+                        <li class="list-group-item">Jimmy</li>
+                        <li class="list-group-item">Nick</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Tee Time 3 -->
+        <div class="col-md-4 tee-time">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tee Time: TBD</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Alex</li>
+                        <li class="list-group-item">Lindley</li>
+                        <li class="list-group-item">Kieffer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Add more tee times for Course 1 as needed -->
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-heading">
+        <h2>Course 2</h2>
+    </div>
+    <!-- Repeat the structure for Course 2, Course 3, etc. -->
+
+</div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
