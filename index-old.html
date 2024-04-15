@@ -6,6 +6,25 @@
     <title>GuysGoneGolfing'24</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #card-parent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border: 1px solid red;
+        }
+        .card-child {
+            border: 1px solid green;
+            margin: 0 10px;
+            ;
+        }
+    </style>
 </head>
 <body>
     <header class="bg-dark text-white">
@@ -32,9 +51,6 @@
                             <a class="nav-link" href="./courses.html">Courses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./teetimes.html">Tee Times & Cart Parings</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="./games.html">Games</a>
                         </li>
                         <li class="nav-item">
@@ -56,43 +72,43 @@
 </div>
 
 <!-- Main Content Section -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-md-8">
+        <div>
             <h2>Purpose</h2>
             <p>Each year we come together to pick a different loction to go on our guys golfing trip.  Each year has had a unique feel & experei Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque sequi labore eos ipsam consectetur beatae tempore sit provident aut architecto omnis delectus quas libero repellendus odit, obcaecati, iste rerum.</p>
             <!-- Add more content as needed -->
         </div>
-        <div class="col-md-4">
+        <div>
             <h2>Previous Trips</h2>
             <!-- Showcase pictures from previous trips -->
-            <div class="card">
-                <img src=".//css/img/quarry.jpg" class="card-img-top" alt="The Quarry Golf Club">
-                <div class="card-body">
-                    <p class="card-title">San Antonio, Tx</p>
-                    <p class="card-text">12 guys played 99 holes in 3 days</p>
-                    <p class="card-text">The signiture course was The Quarry. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nemo rem officiis nostrum maiores quae aliquid ea, fuga illo, ipsum doloremque? Debitis deleniti incidunt animi porro ipsa doloribus fugiat? Numquam!</p>
+            <div id="card-parent">
+                <div class="card card-child">
+                    <img src="./css/img/quarry.jpg" class="card-img-top" alt="The Quarry Golf Club">
+                    <div class="card-body">
+                        <p class="card-title">San Antonio, Tx</p>
+                        <p class="card-text">12 guys played 99 holes in 3 days</p>
+                        <p class="card-text">The signiture course was The Quarry. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nemo rem officiis nostrum maiores quae aliquid ea, fuga illo, ipsum doloremque? Debitis deleniti incidunt animi porro ipsa doloribus fugiat? Numquam!</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src=".//css/img/pr.jpg" class="card-img-top" alt="Pilgrams Run Golf Course">
-                <div class="card-body">
-                    <p class="card-title">Grand Rapids, Mi</p>
-                    <p class="card-text">This trip was designed after an espisode of <a href="https://www.youtube.com/watch?v=JrrQNA5X00I">Tourist Sauce</a> by No Laying Up</p>
-                    <p class="card-text">Some highlights of this trip include our steak dinner at <a href="https://thechophouserestaurant.com/">The Chophouse</a> followed by cigars at <a href="https://my.matterport.com/show/?m=wfyaJwmRSgu&sr=-1.61,-1.38&ss=1">BOLD</a> cigar bar Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis delectus iste deserunt culpa assumenda eius est alias magni, officiis provident et maxime dolore, nemo commodi omnis enim adipisci id porro.</p>
+                <div class="card card-child">
+                    <img src="./css/img/pr.jpg" class="card-img-top" alt="Pilgrams Run Golf Course">
+                    <div class="card-body">
+                        <p class="card-title">Grand Rapids, Mi</p>
+                        <p class="card-text">This trip was designed after an espisode of <a href="https://www.youtube.com/watch?v=JrrQNA5X00I">Tourist Sauce</a> by No Laying Up</p>
+                        <p class="card-text">Some highlights of this trip include our steak dinner at <a href="https://thechophouserestaurant.com/">The Chophouse</a> followed by cigars at <a href="https://my.matterport.com/show/?m=wfyaJwmRSgu&sr=-1.61,-1.38&ss=1">BOLD</a> cigar bar Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis delectus iste deserunt culpa assumenda eius est alias magni, officiis provident et maxime dolore, nemo commodi omnis enim adipisci id porro.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card">
-                <div class="card">
-                    <img src=".//css/img/ahg.webp" class="card-img-top" alt="Arrowhead Golf Club">
+                
+                <div class="card card-child"> 
+                    <img src="./css/img/ahg.webp" class="card-img-top" alt="Arrowhead Golf Club">
                     <div class="card-body">
                         <p class="card-title">Denver, Co</p>
                         <p class="card-text">The year of the bus. We rented a 15 pasenger bus and drove it from Kansas City to Denver.</p>
                         <p class="card-text">Montain golf, wonderful boulder entertainment, and countless hands of Bouree come to mind.  This trip also included courses designed by Pete Dye & Tom Doke Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, inventore nisi voluptatibus repellendus dolores consequatur corporis sed aspernatur ipsum voluptatem aliquam commodi atque voluptates expedita ex corrupti tempore laudantium excepturi!</p>
                     </div>
                 </div>
-
+            </div>
             <!-- Add more cards for additional trips -->
         </div>
     </div>
